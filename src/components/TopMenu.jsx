@@ -1,6 +1,8 @@
 import React from 'react';
-import { Button, Menu, IconButton, MenuButton, MenuList, MenuGroup, MenuItem, MenuDivider } from "@chakra-ui/react"
+import { Menu, IconButton, MenuButton, MenuList, MenuGroup, MenuItem, MenuDivider } from "@chakra-ui/react"
 import { HamburgerIcon } from '@chakra-ui/icons';
+import { ColorModeSwitcher } from '../ColorModeSwitcher';
+
 
 export const TopMenu = () => {
     return (
@@ -22,6 +24,8 @@ export const TopMenu = () => {
                     <MenuItem>FAQ</MenuItem>
                 </MenuGroup>
             </MenuList>
+          <ColorModeSwitcher justifySelf="flex-end" />
+
         </Menu>
     )
 }

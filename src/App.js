@@ -1,40 +1,32 @@
 import React from 'react';
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
-} from '@chakra-ui/react';
-import { Logo } from './Logo';
+import { Box, ChakraProvider, Grid, theme } from '@chakra-ui/react';
 import { TopMenu } from './components/TopMenu';
+import { TabArea } from './components/sections/TabArea';
+import { Routes, Route } from "react-router-dom"
+import { Work } from "./pages/Work"
+import { Home } from "./pages/Home"
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box m={10} fontSize="xl">
-          <TopMenu/>
+      
         <Grid minH="100vh" p={3}>
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
-          </VStack>
+          <Box>
+            <TopMenu name='David Lee'/>
+          </Box>
+
+          <Routes>
+            <Route path="/" element={ <Home/> }>
+            </Route>
+            <Route path="/my-work" element={<Work/>}>
+            </Route>
+          </Routes>
+
+          <Box align="left">
+            <TabArea/>
+          </Box>
+
         </Grid>
-      </Box>
     </ChakraProvider>
   );
 }

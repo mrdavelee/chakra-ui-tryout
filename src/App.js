@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, ChakraProvider, Flex, Grid, theme } from '@chakra-ui/react';
+import { Box, ChakraProvider, Container, Grid, theme } from '@chakra-ui/react';
 import { TopMenu } from './components/TopMenu';
 // import { TabArea } from './components/sections/TabArea';
 import { Routes, Route } from "react-router-dom"
@@ -10,7 +10,7 @@ import { About } from "./pages/About"
 function App({...rest}) {
   return (
     <ChakraProvider theme={theme}>
-      <Flex px={8} mb={16} {...rest}>
+      <Container px={8} mb={16} maxW="1400" {...rest}>
         <Grid minH="100vh" p={3}>
           <Box>
             <TopMenu name='David Lee'/>
@@ -29,7 +29,7 @@ function App({...rest}) {
           </Box> */}
 
         </Grid>
-      </Flex>
+      </Container>
     </ChakraProvider>
   );
 }

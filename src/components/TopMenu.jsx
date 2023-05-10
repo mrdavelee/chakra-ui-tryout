@@ -15,8 +15,21 @@ export const TopMenu = ({ name }) => {
                 />
                 <MenuList>
                     <MenuGroup title={name}>
-                        <MenuItem>My Profile</MenuItem>
-                        <MenuItem> Projects</MenuItem>
+                    <MenuItem>
+                            <Link href="/">
+                                Homepage
+                            </Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link href="/my-work">
+                                My Profile
+                            </Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link href="my-projects">
+                                Projects
+                            </Link>
+                        </MenuItem>
                     </MenuGroup>
                     <MenuDivider />
                     <MenuGroup title='Downloads'>

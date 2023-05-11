@@ -18,8 +18,8 @@ function App({...rest}) {
           <Box>
             <Routes>
               <Route path="/" element={ <Home/> }/>
-              <Route path="/my-work" element={ <Work/> }/>
-              <Route path="/my-projects" element={ <Projects/> }>
+              <Route path="my-work" element={ <Work/> }/>
+              <Route path="my-projects" element={ <Projects/> }>
               </Route>
             </Routes>
           </Box>

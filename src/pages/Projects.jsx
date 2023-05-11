@@ -21,7 +21,13 @@ export const Projects = () => {
                 mainImg={require ('../assets/portImgs/itchy.png') } 
                 url='https://www.itchypetawarenessmonth.com/' 
                 tags={['css', 'html', 'JavaScript', 'Jquery']}
-                description='To be completed'
+                description='This site was built to advertise Itchy Pet Awareness Month 
+                to the US veterinarian clinics. It is intended to provide clinics with
+                both online and offline assets to raise awareness to the public about the 
+                various reasons their dogs may be itching. The client wanted various bespoke 
+                elements, all of which were built using HTML, CSS and JavaScript form the 
+                ground up. With so many elements in close proximity it was vital to maintain
+                a mobile-first approach.'
             />
             <Overlay 
                 title='Building' 

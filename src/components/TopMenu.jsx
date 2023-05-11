@@ -2,6 +2,7 @@ import React from 'react';
 import { Menu, IconButton, Link, MenuButton, MenuList, MenuGroup, MenuItem, MenuDivider } from "@chakra-ui/react"
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { GoMarkGithub } from 'react-icons/go'
+import { BsLinkedin } from 'react-icons/bs'
 import { ColorModeSwitcher } from '../ColorModeSwitcher'
 import cv from '../../src/assets/David_Lee_CV.docx'
 
@@ -47,6 +48,17 @@ export const TopMenu = ({ name }) => {
                     size="md"
                     fontSize="xl"
                     aria-label='Visit my Github page'
+                    variant="ghost"
+                    color="current"
+                    marginLeft="2"
+                />
+            </Link>
+            <Link href='https://www.linkedin.com/in/davidleedev/' target='_blank'>
+                <IconButton 
+                    icon={<BsLinkedin />}
+                    size="md"
+                    fontSize="xl"
+                    aria-label='Visit my Linkedin page'
                     variant="ghost"
                     color="current"
                     marginLeft="2"

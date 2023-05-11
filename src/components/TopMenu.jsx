@@ -18,17 +18,17 @@ export const TopMenu = ({ name }) => {
                 <MenuGroup title={name}>
                     <MenuItem>
 
-                        <Link href="/">
+                        <Link href={"/"}>
                             Homepage
                         </Link>
                     </MenuItem>
                     <MenuItem>
-                        <Link href="my-work">
+                        <Link href={"/my-work"}>
                             My Profile
                         </Link>
                     </MenuItem>
                     <MenuItem>
-                        <Link href="my-projects">
+                        <Link href={"/my-projects"}>
                             Projects
                         </Link>
                     </MenuItem>

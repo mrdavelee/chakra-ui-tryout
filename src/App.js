@@ -1,10 +1,9 @@
 import React from 'react';
 import { Box, ChakraProvider, Container, Grid, theme } from '@chakra-ui/react';
-import { TopMenu } from './components/TopMenu';
-import { Routes, Route } from "react-router-dom"
-import { Work } from "./pages/Work"
-import { Home } from "./pages/Home"
-import { Projects } from "./pages/Projects"
+import { TopMenu } from './components/TopMenu'
+import { router } from './utils/Router'
+import { RouterProvider } from "react-router-dom"
+<RouterProvider router={router} />
 
 function App({...rest}) {
   return (
@@ -16,12 +15,7 @@ function App({...rest}) {
             <TopMenu name='David Lee'/>
           </Box>
           <Box>
-            <Routes>
-              <Route path="/" element={ <Home/> }/>
-              <Route path="my-work" element={ <Work/> }/>
-              <Route path="my-projects" element={ <Projects/> }>
-              </Route>
-            </Routes>
+          <RouterProvider router={router} />
           </Box>
 
         </Grid>

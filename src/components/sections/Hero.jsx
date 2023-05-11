@@ -11,7 +11,7 @@ export function Hero({ title, subtitle, image, ctaLink, ctaText, ...rest }) {
       direction={{ base: "column-reverse", md: "row" }}
       wrap="no-wrap"
       minH="70vh"
-      px={8}
+      px={4}
       mb={16}
       {...rest}
     >

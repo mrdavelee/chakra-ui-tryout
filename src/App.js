@@ -8,7 +8,7 @@ import { RouterProvider } from "react-router-dom"
 function App({...rest}) {
   return (
     <ChakraProvider theme={theme}>
-      <Container px={8} mb={16} maxW="1400" {...rest}>
+      <Container px={{sm: 4, md:8}} mb={16} maxW="1400" {...rest}>
         <Grid minH="100vh" p={3}>
 
           <Box mb={5}>

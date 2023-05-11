@@ -5,7 +5,7 @@ import { TopMenu } from './components/TopMenu';
 import { Routes, Route } from "react-router-dom"
 import { Work } from "./pages/Work"
 import { Home } from "./pages/Home"
-import { About } from "./pages/About"
+import { Projects } from "./pages/Projects"
 
 function App({...rest}) {
   return (
@@ -18,8 +18,8 @@ function App({...rest}) {
           <Box>
             <Routes>
               <Route path="/" element={ <Home/> }/>
-              <Route path="/about-me" element={ <About/> }/>
-              <Route path="/my-work" element={ <Work/> }>
+              <Route path="/my-work" element={ <Work/> }/>
+              <Route path="/my-projects" element={ <Projects/> }>
               </Route>
             </Routes>
           </Box>

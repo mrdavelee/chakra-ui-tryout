@@ -1,6 +1,7 @@
 import React from 'react';
-import { Menu, IconButton, Link,MenuButton, MenuList, MenuGroup, MenuItem, MenuDivider } from "@chakra-ui/react"
+import { Menu, IconButton, Link, MenuButton, MenuList, MenuGroup, MenuItem, MenuDivider } from "@chakra-ui/react"
 import { HamburgerIcon } from '@chakra-ui/icons'
+import { GoMarkGithub } from 'react-icons/go'
 import { ColorModeSwitcher } from '../ColorModeSwitcher'
 import cv from '../../src/assets/David_Lee_CV.docx'
 
@@ -39,7 +40,17 @@ export const TopMenu = ({ name }) => {
                     </MenuGroup>
                 </MenuList>
             <ColorModeSwitcher justifySelf="flex-end" />
-
-            </Menu>
+            <Link href='https://github.com/mrdavelee' target='_blank'>
+                <IconButton 
+                    icon={<GoMarkGithub />}
+                    size="md"
+                    fontSize="xl"
+                    aria-label='Visit my Github page'
+                    variant="ghost"
+                    color="current"
+                    marginLeft="2"
+                />
+            </Link>
+        </Menu>
     )
 }

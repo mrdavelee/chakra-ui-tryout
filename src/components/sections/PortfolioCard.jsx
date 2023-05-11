@@ -1,14 +1,4 @@
-import {
-    Flex,
-    Circle,
-    Box,
-    Image,
-    Badge,
-    useColorModeValue,
-    Icon,
-    chakra,
-    Tooltip,
-  } from '@chakra-ui/react';
+import { Flex, Circle, Box, Image, Badge, useColorModeValue, Icon, chakra, Tooltip } from '@chakra-ui/react'
   import { FiShoppingCart } from 'react-icons/fi';
   
   const data = {
@@ -23,7 +13,7 @@ import {
   
   
   
-  function PortfolioCard() {
+  function PortfolioCard({ title, imageURL }) {
     return (
       <Flex w="full" alignItems="center" justifyContent="center">
         <Box

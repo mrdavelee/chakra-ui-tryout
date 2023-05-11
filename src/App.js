@@ -11,8 +11,8 @@ function App({...rest}) {
     <ChakraProvider theme={theme}>
       <Container px={8} mb={16} maxW="1400" {...rest}>
         <Grid minH="100vh" p={3}>
-          
-          <Box>
+
+          <Box mb={5}>
             <TopMenu name='David Lee'/>
           </Box>
           <Box>

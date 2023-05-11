@@ -19,82 +19,55 @@ export const Projects = () => {
                 title='Itchy Pet Awareness' 
                 mainImg={require ('../assets/portImgs/itchy.png') } 
                 url='https://www.itchypetawarenessmonth.com/' 
-                description='Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat '
+                description='To be completed'
             />
             <Overlay 
                 title='Building' 
                 mainImg={require ('../assets/portImgs/building.png') } 
                 url='https://www.building.co.uk/' 
-                description='Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat '
+                description='To be completed'
             />
             <Overlay 
                 title='Retail Week' 
                 mainImg={require ('../assets/portImgs/rw.png') } 
                 url='https://www.retail-week.com/' 
-                description='Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat '
+                description='To be completed'
             />
             <Overlay 
                 title='Boat International' 
                 mainImg={require ('../assets/portImgs/boat.png') } 
                 url='https://www.boatinternational.com/' 
-                description='Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat '
+                description='To be completed'
             />
             <Overlay 
                 title='High Street Journal' 
                 mainImg={require ('../assets/portImgs/hsj.png') } 
                 url='https://www.hsj.co.uk/' 
-                description='Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat '
+                description='To be completed'
             />
             <Overlay 
                 title='International Broadcasting Convention' 
                 mainImg={require ('../assets/portImgs/ibc.png') } 
                 url='https://www.ibc.org/' 
-                description='Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat '
+                description='To be completed'
             />
             <Overlay 
                 title='THe Law Gazette' 
                 mainImg={require ('../assets/portImgs/law.png') } 
                 url='https://www.lawgazette.co.uk/' 
-                description='Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat '
+                description='To be completed'
             />
             <Overlay 
                 title='Education in Chemistry' 
                 mainImg={require ('../assets/portImgs/eic.png') } 
                 url='https://edu.rsc.org/eic' 
-                description='Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat '
+                description='To be completed'
             />
             <Overlay 
                 title='Chemistry World' 
                 mainImg={require ('../assets/portImgs/cw.png') } 
                 url='https://www.chemistryworld.com/' 
-                description='Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat Twat 
-                Twat Twat Twat Twat Twat Twat Twat Twat Twat '
+                description='To be completed'
             />
         </SimpleGrid>
         

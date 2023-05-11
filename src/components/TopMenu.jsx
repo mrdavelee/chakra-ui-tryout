@@ -23,12 +23,12 @@ export const TopMenu = ({ name }) => {
                         </Link>
                     </MenuItem>
                     <MenuItem>
-                        <Link href="/my-work">
+                        <Link href="my-work">
                             My Profile
                         </Link>
                     </MenuItem>
                     <MenuItem>
-                        <Link href="/my-projects">
+                        <Link href="my-projects">
                             Projects
                         </Link>
                     </MenuItem>

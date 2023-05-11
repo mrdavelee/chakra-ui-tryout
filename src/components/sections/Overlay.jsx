@@ -1,5 +1,6 @@
 import React from "react"
 import { Button, Box, Drawer, DrawerBody, DrawerContent, DrawerCloseButton, DrawerFooter, DrawerHeader, DrawerOverlay, Image, Link, useDisclosure } from "@chakra-ui/react"
+import PortfolioCard from './PortfolioCard'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 export const Overlay = ({ title, mainImg, url, description }) => {
@@ -8,9 +9,8 @@ export const Overlay = ({ title, mainImg, url, description }) => {
 
     return (
         <>
-            <Button ref={btnRef} colorScheme='orange' onClick={onOpen}>
-                { title }
-            </Button>
+            <PortfolioCard title={ title } imageURL={ mainImg }/>
+            
             <Drawer
                 isOpen={isOpen}
                 placement='right'

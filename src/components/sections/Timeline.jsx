@@ -1,7 +1,8 @@
 import React from 'react';
 import { Box, Heading, Text } from "@chakra-ui/react"
 
-import styles from "../../styles/style.css"
+import "../../styles/style.css"
+
 export const Timeline = () => {
 
     const steps = [

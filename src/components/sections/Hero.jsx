@@ -3,14 +3,7 @@ import PropTypes from "prop-types"
 import { Box, Flex, Image, Heading, Stack, Text } from "@chakra-ui/react"
 
 
-export function Hero({
-  title,
-  subtitle,
-  image,
-  ctaLink,
-  ctaText,
-  ...rest
-}) {
+export function Hero({ title, subtitle, image, ctaLink, ctaText, ...rest }) {
   return (
     <Flex
       align="center"

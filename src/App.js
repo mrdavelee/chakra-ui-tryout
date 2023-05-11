@@ -3,6 +3,9 @@ import { Box, ChakraProvider, Container, Grid, theme } from '@chakra-ui/react';
 import { TopMenu } from './components/TopMenu'
 import { router } from './utils/Router'
 import { RouterProvider } from "react-router-dom"
+import './theme.js'
+
+
 <RouterProvider router={router} />
 
 function App({...rest}) {

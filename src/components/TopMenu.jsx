@@ -4,7 +4,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import { GoMarkGithub } from 'react-icons/go'
 import { ImLinkedin } from 'react-icons/im'
 import { ColorModeSwitcher } from '../ColorModeSwitcher'
-import cv from '../../src/assets/David_Lee_CV.docx'
+import cv from '../../src/assets/David_Lee_CV_pdf.pdf'
 
 export const TopMenu = ({ name }) => {
     return (

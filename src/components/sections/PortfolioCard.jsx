@@ -1,45 +1,23 @@
-import { Box, Flex, Image, useColorModeValue } from '@chakra-ui/react'
+import { Box, Card, CardHeader, CardBody, Flex, Image, Heading, useColorModeValue } from '@chakra-ui/react'
     
   function PortfolioCard({ title, imageURL, tags }) {
     return (
       <Flex  alignItems="center" justifyContent="center">
-        <Box
-          bg={useColorModeValue('white', 'gray.800')}
-          maxW="sm"
-          borderWidth="1px"
-          rounded="lg"
-          shadow="lg"
-          position="relative">
-  
+
+        <Card>
           <Image
             src={imageURL}
             alt={`Screenshot of ${title}`}
             roundedTop="lg"
           />
-  
-          <Box p="6">
-          {/* <Stack direction='row'>
+          <CardBody>
 
-          {tags.map((tag, index) => (
-              <Badge variant='solid' colorScheme='green'>{ tag.index}</Badge>
-          ))}
+            <Heading size='md'>{title}</Heading>
 
-          </Stack> */}
-            <Flex mt="1" justifyContent="space-between" alignContent="center">
-              <Box
-                fontSize="xl"
-                fontWeight="semibold"
-                as="h4"
-                lineHeight="tight"
-                isTruncated>
-                {title}
-              </Box>
-              
-            </Flex>
-  
-            
-          </Box>
-        </Box>
+          </CardBody>
+
+          </Card>
+        
       </Flex>
     );
   }

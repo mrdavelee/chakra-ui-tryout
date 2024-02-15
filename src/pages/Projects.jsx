@@ -1,21 +1,29 @@
 import React from 'react'
 import { SimpleGrid } from '@chakra-ui/react'
 import { Overlay } from '../components/sections/Overlay'
+import { TextSection } from "../components/sections/TextSection"
 
+import { Flex, Tab, TabList, TabPanels, TabPanel, Tabs } from "@chakra-ui/react"
+
+// import { TabArea } from '../components/sections/TabArea'
 
 export const Projects = () => {
     return (
-        <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} spacing='40px'>
-            <Overlay 
-                title='Notes App' 
-                mainImg={require ('../assets/portImgs/notes.png') } 
-                url='https://master--thunderous-kashata-4cce4f.netlify.app/' 
-                tags={['css', 'html', 'React', 'TypeScript', 'Jquery']}
-                description='This is a React app built with TypeScript and Bootstrap.
-                In the app you can create notes, including tags. From the homepage you can
-                search notes by title or tags. Tags can also be updated in real-time
-                or deleted altogether.'
-            />
+        <>
+        <Flex
+            px={8}
+            mb={16}
+            >
+            <Tabs align="left" variant='soft-rounded' colorScheme='orange' >
+                <TabList>
+                    <Tab>My Profile</Tab>
+                    <Tab>My projects</Tab>
+                </TabList>
+
+                <TabPanels>
+                    <TabPanel>
+                    <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} spacing='40px'>
+            
             <Overlay 
                 title='Itchy Pet Awareness' 
                 mainImg={require ('../assets/portImgs/itchy.png') } 
@@ -104,6 +112,26 @@ export const Projects = () => {
                 version and the footer area needed a rebuild as well as refactored carousels.'
             />
         </SimpleGrid>
+                    </TabPanel>
+
+                    <TabPanel>
+                    <Overlay 
+                title='Notes App' 
+                mainImg={require ('../assets/portImgs/notes.png') } 
+                url='https://master--thunderous-kashata-4cce4f.netlify.app/' 
+                tags={['css', 'html', 'React', 'TypeScript', 'Jquery']}
+                description='This is a React app built with TypeScript and Bootstrap.
+                In the app you can create notes, including tags. From the homepage you can
+                search notes by title or tags. Tags can also be updated in real-time
+                or deleted altogether.'
+            />
+                    </TabPanel>
+                </TabPanels>
+            </Tabs>
+        </Flex>
+
+        
+        </>
         
     )
 }

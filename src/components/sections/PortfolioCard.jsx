@@ -1,4 +1,4 @@
-import { Box, Card, CardHeader, CardBody, Flex, Image, Heading, useColorModeValue } from '@chakra-ui/react'
+import { Card, CardBody, Flex, Image, Heading } from '@chakra-ui/react'
     
   function PortfolioCard({ title, imageURL, tags }) {
     return (

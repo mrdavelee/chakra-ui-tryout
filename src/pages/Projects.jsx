@@ -1,5 +1,5 @@
 import React from 'react'
-import { SimpleGrid } from '@chakra-ui/react'
+import { SimpleGrid, VStack } from '@chakra-ui/react'
 import { Overlay } from '../components/sections/Overlay'
 
 import { Flex, Tab, TabList, TabPanels, TabPanel, Tabs } from "@chakra-ui/react"
@@ -9,14 +9,12 @@ import { Flex, Tab, TabList, TabPanels, TabPanel, Tabs } from "@chakra-ui/react"
 export const Projects = () => {
     return (
         <>
-        <Flex
-            px={8}
-            mb={16}
-            >
-            <Tabs align="left" variant='soft-rounded' colorScheme='orange' >
-                <TabList>
-                    <Tab>My Profile</Tab>
-                    <Tab>My projects</Tab>
+        {/* <Flex px={8} mb={16} > */}
+            {/* <VStack> */}
+            <Tabs align="center" colorScheme='pink' >
+                <TabList py={{sm: 4, md:8}}>
+                    <Tab>Work </Tab>
+                    <Tab>Personal</Tab>
                 </TabList>
 
                 <TabPanels>
@@ -129,7 +127,8 @@ export const Projects = () => {
                     </TabPanel>
                 </TabPanels>
             </Tabs>
-        </Flex>
+            {/* </VStack> */}
+        {/* </Flex> */}
 
         
         </>

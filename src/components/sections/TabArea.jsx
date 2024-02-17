@@ -12,7 +12,7 @@ export const TabArea = ({...rest}) => {
             >
             <Tabs align="left" variant='soft-rounded' colorScheme='orange' >
                 <TabList>
-                    <Tab>My Profile</Tab>
+                    <Tab fontSize="xl">My Profile</Tab>
                     <Tab>My projects</Tab>
                 </TabList>
 

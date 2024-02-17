@@ -9,8 +9,6 @@ import { Tab, TabList, TabPanels, TabPanel, Tabs } from "@chakra-ui/react"
 export const Projects = () => {
     return (
         <>
-        {/* <Flex px={8} mb={16} > */}
-            {/* <VStack> */}
             <Tabs align="center" colorScheme='pink' >
                 <TabList py={{sm: 4, md:8}}>
                     <Tab>Work </Tab>
@@ -127,8 +125,6 @@ export const Projects = () => {
                     </TabPanel>
                 </TabPanels>
             </Tabs>
-            {/* </VStack> */}
-        {/* </Flex> */}
 
         
         </>

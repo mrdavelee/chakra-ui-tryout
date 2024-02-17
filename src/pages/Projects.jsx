@@ -17,7 +17,7 @@ export const Projects = () => {
 
                 <TabPanels>
                     <TabPanel>
-                        <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} spacing='40px'>
+                        <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} spacing='20px'>
                 
                             <Overlay 
                                 title='Itchy Pet Awareness' 
@@ -92,7 +92,7 @@ export const Projects = () => {
                                 url='https://edu.rsc.org/eic' 
                                 tags={['css', 'html', 'JavaScript', 'Jquery']}
                                 description='EIC, as part of the Royal Society of Chemistry, requested subtle 
-                                changes to a numnber of elements where news articles overlapped, or were shared.
+                                changes to a number of elements where news articles overlapped, or were shared.
                                 This was done using classes applied using JavaScript which could then be styled
                                 accordingly.'
                             />
@@ -110,7 +110,7 @@ export const Projects = () => {
                     </TabPanel>
 
                     <TabPanel>
-                        <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} spacing='40px'>
+                        <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} spacing='20px'>
                             <Overlay 
                                 title='Notes App' 
                                 mainImg={require ('../assets/portImgs/notes.png') } 

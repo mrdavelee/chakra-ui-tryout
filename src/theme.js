@@ -9,6 +9,11 @@ const theme = {
   }
 }
 
+const config = {
+  initialColorMode: 'dark',
+  useSystemColorMode: true,
+}
+
 // const config = {
 //   initialColorMode: 'dark',
 //   useSystemColorMode: false,
@@ -17,4 +22,4 @@ const theme = {
 
 //  extendTheme({ config })
 
-export default extendTheme(theme)
+export default extendTheme(theme, config)

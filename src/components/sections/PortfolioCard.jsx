@@ -1,6 +1,10 @@
-import { Card, CardBody, Flex, Image, Heading } from '@chakra-ui/react'
-    
-  function PortfolioCard({ title, imageURL, tags }) {
+import { Card, CardBody, Flex, Image, Heading, useColorModeValue } from '@chakra-ui/react'
+
+
+function PortfolioCard({ title, imageURL, tags }) {
+  
+  const color = useColorModeValue('gray.800', 'red')
+
     return (
       <Flex  alignItems="center" justifyContent="center">
 
@@ -12,7 +16,7 @@ import { Card, CardBody, Flex, Image, Heading } from '@chakra-ui/react'
           />
           <CardBody>
 
-            <Heading size='md'>{title}</Heading>
+            <Heading color={color} size='md'>{title}</Heading>
 
           </CardBody>
 

@@ -1,8 +1,8 @@
 import React from 'react'
-import { SimpleGrid, VStack } from '@chakra-ui/react'
+import { SimpleGrid } from '@chakra-ui/react'
 import { Overlay } from '../components/sections/Overlay'
 
-import { Flex, Tab, TabList, TabPanels, TabPanel, Tabs } from "@chakra-ui/react"
+import { Tab, TabList, TabPanels, TabPanel, Tabs } from "@chakra-ui/react"
 
 // import { TabArea } from '../components/sections/TabArea'
 

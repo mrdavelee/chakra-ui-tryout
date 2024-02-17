@@ -11,7 +11,7 @@ export const Projects = () => {
         <>
             <Tabs align="center" colorScheme='pink' >
                 <TabList py={{sm: 4, md:8}}>
-                    <Tab>Work </Tab>
+                    <Tab>Work</Tab>
                     <Tab>Personal</Tab>
                 </TabList>
 

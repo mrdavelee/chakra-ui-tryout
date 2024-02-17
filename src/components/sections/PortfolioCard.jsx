@@ -3,7 +3,7 @@ import { Card, CardBody, Flex, Image, Heading, useColorModeValue } from '@chakra
 
 function PortfolioCard({ title, imageURL, tags }) {
   
-  const color = useColorModeValue('gray.800', 'red')
+  const color = useColorModeValue('myTheme.dark.light', 'myTheme.bg')
 
     return (
       <Flex  alignItems="center" justifyContent="center">

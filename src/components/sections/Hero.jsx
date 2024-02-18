@@ -1,9 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { AspectRatio, Flex, Image, Heading, Stack, Text } from "@chakra-ui/react"
+import { AspectRatio, useColorModeValue, Flex, Image, Heading, Stack, Text } from "@chakra-ui/react"
 
 
 export function Hero({ title, subtitle, image, ctaLink, ctaText, ...rest }) {
+
+  const color = useColorModeValue('myTheme.dark.light', 'myTheme.bg')
+
+
   return (
     <Flex
       align="center"
@@ -24,7 +28,7 @@ export function Hero({ title, subtitle, image, ctaLink, ctaText, ...rest }) {
           as="h1"
           size="2xl"
           fontWeight="bold"
-          color="white"
+          color={ color }
           textAlign={["center", "center", "left", "left"]}
         >
           {title}
@@ -34,7 +38,7 @@ export function Hero({ title, subtitle, image, ctaLink, ctaText, ...rest }) {
           fontSize="xl"
           mt={2}
           textAlign="left"
-          color="white"
+          color={ color }
           opacity="0.6"
           >
           {subtitle}

@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Box, Flex, Image, Heading, Stack, Text } from "@chakra-ui/react"
+import { AspectRatio, Flex, Image, Heading, Stack, Text } from "@chakra-ui/react"
 
 
 export function Hero({ title, subtitle, image, ctaLink, ctaText, ...rest }) {
@@ -17,42 +17,32 @@ export function Hero({ title, subtitle, image, ctaLink, ctaText, ...rest }) {
     >
       <Stack
         spacing={4}
-        w={{ base: "80%", md: "40%" }}
+        w={{ base: "80%", md: "50%" }}
         align={["top", "top", "flex-start", "flex-start"]}
       >
         <Heading
           as="h1"
-          size="xl"
+          size="2xl"
           fontWeight="bold"
-          color="primary.800"
+          color="white"
           textAlign={["center", "center", "left", "left"]}
         >
           {title}
         </Heading>
-        <Heading
-          as="h2"
-          size="md"
-          color="primary.800"
-          opacity="0.8"
-          fontWeight="normal"
-          lineHeight={1.5}
-          textAlign={["center", "center", "left", "left"]}
-        >
-          {subtitle}
-        </Heading>
         
         <Text
-          fontSize="xs"
+          fontSize="xl"
           mt={2}
-          textAlign="center"
-          color="primary.800"
+          textAlign="left"
+          color="white"
           opacity="0.6"
-        >
+          >
+          {subtitle}
         </Text>
       </Stack>
-      <Box w={{ base: "80%", sm: "60%", md: "50%" }} mb={{ base: 12, md: 0 }}>
-        <Image src={require ('../../assets/IMG-2117.jpg')} size="100%" rounded="1rem" shadow="2xl" />
-      </Box>
+      <AspectRatio ratio={ 3 / 4 } w={{ base: "80%", sm: "60%", md: "40%" }} mb={{ base: 12, md: 0 }}>
+        <Image src={require ('../../assets/unnamed.png')} size="100%" rounded="1rem" fit="cover" shadow="2xl" />
+      </AspectRatio>
     </Flex>
   )
 }

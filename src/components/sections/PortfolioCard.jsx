@@ -10,13 +10,13 @@ function PortfolioCard({ title, imageURL, tags }) {
 
         <Card>
           <Image
-            src={imageURL}
+            src={ imageURL }
             alt={`Screenshot of ${title}`}
             roundedTop="lg"
           />
           <CardBody>
 
-            <Heading color={color} size='md'>{title}</Heading>
+            <Heading color={ color } size='md'>{title}</Heading>
 
           </CardBody>
 

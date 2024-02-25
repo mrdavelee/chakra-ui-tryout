@@ -1,6 +1,14 @@
 import { extendTheme } from '@chakra-ui/react'
+import '@fontsource/quicksand';
+import '@fontsource/raleway';
 
 const theme = {
+  
+    fonts: {
+      heading: `'Quicksand', sans-serif`,
+      body: `'Raleway', sans-serif`,
+    },
+
   colors: {
     myTheme: {
       bg: '#bada55',

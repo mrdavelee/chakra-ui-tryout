@@ -4,6 +4,8 @@ import { Box, ChakraProvider, Container } from '@chakra-ui/react';
 import { TopMenu } from './components/TopMenu'
 import { router } from './utils/Router'
 import { RouterProvider } from "react-router-dom"
+import '@fontsource/raleway/400.css'
+import '@fontsource/quicksand/700.css'
 
 
 <RouterProvider router={router} />

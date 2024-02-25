@@ -16,9 +16,10 @@ export const TabArea = ({...rest}) => {
 
                 <TabPanels>
                     <TabPanel>
-                        <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} spacing='20px'>
+                        <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} spacing='20px' pt="20px">
                 
                             <Overlay 
+                                colorScheme='telegram'
                                 title='Itchy Pet Awareness' 
                                 mainImg={require ('../../assets/portImgs/itchy.png') } 
                                 url='https://www.itchypetawarenessmonth.com/' 
@@ -109,7 +110,7 @@ export const TabArea = ({...rest}) => {
                     </TabPanel>
 
                     <TabPanel>
-                        <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} spacing='20px'>
+                        <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} sspacing='20px' pt="20px">
                             <Overlay 
                                 title='Notes App' 
                                 mainImg={require ('../../assets/portImgs/notes.png') } 

@@ -7,7 +7,6 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 export const Overlay = ({ title, mainImg, url, description }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
-    const bg = useColorModeValue('hsl(0, 0%, 100%)', 'hsl(219, 22%, 23%)')
 
     return (
         <>
@@ -22,9 +21,10 @@ export const Overlay = ({ title, mainImg, url, description }) => {
                 onClose={onClose}
                 finalFocusRef={btnRef}
                 
+                
             >
                 <DrawerOverlay />
-                <DrawerContent bg={ bg }>
+                <DrawerContent colorScheme="telegram">
                     <DrawerCloseButton />
 
                     <DrawerHeader>{ title }</DrawerHeader>

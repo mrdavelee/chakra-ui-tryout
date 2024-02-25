@@ -20,7 +20,7 @@ export const Timeline = () => {
                     <div key={step.title} className='card'>
                         <Box className='info' flexShrink='0'>
                             <Heading as='h3' mb='5' size='lg' className='title'>{ step.title }</Heading>
-                            <Text>{ step.dates }</Text>
+                            <Heading as='h4' mb='2' size='sm'>{ step.dates }</Heading>
                             <Text>{ step.description }</Text>
                         </Box>
                     </div>

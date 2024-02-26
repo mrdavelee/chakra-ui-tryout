@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Drawer, DrawerBody, DrawerContent, DrawerCloseButton, DrawerFooter, DrawerHeader, DrawerOverlay, Image, Link, useDisclosure, useColorModeValue } from "@chakra-ui/react"
+import { Box, Drawer, DrawerBody, DrawerContent, DrawerCloseButton, DrawerFooter, DrawerHeader, DrawerOverlay, Image, Link, useDisclosure } from "@chakra-ui/react"
 import PortfolioCard from './PortfolioCard'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 

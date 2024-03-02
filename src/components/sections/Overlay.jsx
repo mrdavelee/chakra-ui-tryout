@@ -4,14 +4,14 @@ import PortfolioCard from './PortfolioCard'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 
-export const Overlay = ({ title, mainImg, url, description }) => {
+export const Overlay = ({ title, mainImg, url, description, tags }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
 
     return (
         <>
             <Link onClick={onOpen}>
-                <PortfolioCard title={ title } imageURL={ mainImg } onClick={ onOpen }/>
+                <PortfolioCard tags={ tags } title={ title } imageURL={ mainImg } onClick={ onOpen }/>
             </Link>
             
             <Drawer

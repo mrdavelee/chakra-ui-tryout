@@ -29,7 +29,7 @@ export function Hero({ title, subtitle, image, ctaLink, ctaText, ...rest }) {
           size="2xl"
           fontWeight="bold"
           color={ color }
-          textAlign={["center", "center", "left", "left"]}
+          textAlign={["left", "left", "left", "left"]}
         >
           {title}
         </Heading>

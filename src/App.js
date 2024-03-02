@@ -1,4 +1,4 @@
-import theme from './theme'
+import theme from './theme/theme'
 import React from 'react';
 import { Box, ChakraProvider, Container } from '@chakra-ui/react';
 import { TopMenu } from './components/TopMenu'

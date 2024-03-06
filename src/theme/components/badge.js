@@ -10,7 +10,8 @@ export const badgeStyles = {
                 }
             },
             baseStyle: {
-                textTransform: "capitalize"
+                textTransform: "uppercase",
+                borderRadius: 'sm',
             }
 
         }

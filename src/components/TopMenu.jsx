@@ -33,7 +33,13 @@ export const TopMenu = ({ name }) => {
                             My Projects
                         </Link>
                     </MenuItem>
+                    <MenuItem>
+                        <Link href={"/fat-fighters"}>
+                            Fat Fighters
+                        </Link>
+                    </MenuItem>
                     </MenuGroup>
+                    
                 <MenuDivider />
                 <MenuGroup title='Downloads'>
                     <MenuItem>

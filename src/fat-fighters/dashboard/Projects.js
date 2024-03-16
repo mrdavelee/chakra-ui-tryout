@@ -11,9 +11,9 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 // Custom components
-import Card from "../Card/Card";
-import CardHeader from "../Card/CardHeader.js";
-import DashboardTableRow from "../tables/DashboardTableRow.js";
+import Card from "../components/Card/Card.js";
+import CardHeader from "../components/Card/CardHeader.js";
+import DashboardTableRow from "../components/tables/DashboardTableRow.js";
 import React from "react";
 import {IoIosCheckmarkCircle} from "react-icons/io"
 

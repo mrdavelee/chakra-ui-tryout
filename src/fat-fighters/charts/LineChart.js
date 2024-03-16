@@ -7,14 +7,22 @@ class LineChart extends React.Component {
     super(props);
 
     this.state = {
-      // chartData: props.data, // Set chartData using props
       chartOptions: {},
     };
   }
 
   componentDidMount() {
+    const optionsData = this.props.yAxisData; // Accessing props directly here
+    const modifiedOptions = {
+      ...lineChartOptions,
+      yaxis: {
+        ...lineChartOptions.yaxis,
+        max: optionsData.max,
+        min: optionsData.min,
+      },
+    };
     this.setState({
-      chartOptions: lineChartOptions,
+      chartOptions: modifiedOptions,
     });
   }
   

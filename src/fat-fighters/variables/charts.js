@@ -129,8 +129,6 @@ export const lineChartOptions = {
     },
   },
   yaxis: {
-    min: 75,
-    max: 100,
     labels: {
       style: {
         colors: "#c8cfca",

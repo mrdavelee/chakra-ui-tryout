@@ -9,12 +9,54 @@ export const TabArea = ({...rest}) => {
         
             <Tabs align="center" colorScheme='pink' >
                 <TabList py={{sm: 4, md:8}}>
-                    <Tab>Work</Tab>
+                    <Tab>Ubiq Education</Tab>
+                    <Tab>Proagrica</Tab>
+                    <Tab>Abacus eMedia</Tab>
                     <Tab>Personal</Tab>
                     <Tab>Me</Tab>
                 </TabList>
 
                 <TabPanels>
+
+                    {/* Ubiq */}
+
+                    <TabPanel>
+                        <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} spacing='20px' pt="20px">
+                
+                            
+                            <Overlay 
+                                title='St Christopher School' 
+                                mainImg={require ('../../assets/portImgs/st_chris.png') } 
+                                url='https://www.stchris.co.uk/' 
+                                tags={['css', 'html', 'JavaScript', 'Jquery', 'azure']}
+                                description=''
+                            />
+                            <Overlay 
+                                title='Kings Ely School' 
+                                mainImg={require ('../../assets/portImgs/kings_ely.png') } 
+                                url='https://www.kingsely.org/' 
+                                tags={['css', 'html', 'JavaScript', 'Jquery', 'azure']}
+                                description=''
+                            />
+                            <Overlay 
+                                title='Ryde School' 
+                                mainImg={require ('../../assets/portImgs/ryde_school.png') } 
+                                url='https://www.rydeschool.org.uk/' 
+                                tags={['css', 'html', 'JavaScript', 'Jquery', 'azure']}
+                                description=''
+                            />
+                            <Overlay 
+                                title='International School of Bremen' 
+                                mainImg={require ('../../assets/portImgs/isb.png') } 
+                                url='https://www.isbremen.de/' 
+                                tags={['css', 'html', 'JavaScript', 'Jquery', 'azure']}
+                                description=''
+                            />
+                        </SimpleGrid>
+                    </TabPanel>
+
+                    {/* Proagrica */}
+
                     <TabPanel>
                         <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} spacing='20px' pt="20px">
                 
@@ -32,6 +74,15 @@ export const TabArea = ({...rest}) => {
                                 ground up. With so many elements in close proximity it was vital to maintain
                                 a mobile-first approach.'
                             />
+                            
+                        </SimpleGrid>
+                    </TabPanel>
+
+                    {/* Abacus */}
+
+                    <TabPanel>
+                        <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} spacing='20px' pt="20px">
+                
                             <Overlay 
                                 title='Building' 
                                 mainImg={require ('../../assets/portImgs/building.png') } 
@@ -120,6 +171,15 @@ export const TabArea = ({...rest}) => {
                                 In the app you can create notes, including tags. From the homepage you can
                                 search notes by title or tags. Tags can also be updated in real-time
                                 or deleted altogether.'
+                            />
+                        
+                            <Overlay 
+                                title='Celebrity Cruise mockup' 
+                                mainImg={require ('../../assets/portImgs/celebrity.png') } 
+                                url='https://verdant-cannoli-55ca9e.netlify.app' 
+                                tags={['tailwind', 'html', 'React', 'TypeScript', 'Next.js']}
+                                description='This is a mockup of the Celebrity Cruise page. It is built with Next.js, Tailwind and TypeScript. This will be further
+                                improved with component-based menu system.'
                             />
                         </SimpleGrid>
                     </TabPanel>

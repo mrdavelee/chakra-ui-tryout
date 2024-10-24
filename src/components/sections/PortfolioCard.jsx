@@ -51,7 +51,13 @@ function PortfolioCard({ title, imageURL, tags }) {
       case 'javascript':
         return 'purple'        
       case 'jquery':
-        return 'blue'
+        return 'royalblue'
+       case 'tailwind':
+        return 'cornflowerblue'
+      case 'next.js':
+        return 'black'
+      case 'azure':
+        return 'steelblue'
       default:
         break;
     }
